@@ -28,4 +28,37 @@ int main(){
 	for (int i = 0; i < external.getsize(); i++){
 		printf ("|  %i   | %s |\n", i, external.getword(i));
 	}
+	
+	
+	//UI code
+	bool run_prog = true;
+	while (run_prog)
+	{
+		cout<<"Enter command: edit source code; print converted assembly code; memory; exit" <<endl;
+		cin>> command; 
+		if(string == "edit source code") 
+		{
+			//open file with source code;
+		}
+		else if(string =="print converted assembly code" )
+		{
+			//call function that print converted assembly code
+		}
+		else if(string == "memory")
+		{
+			//print memory from memory class
+			// should be a memory that I can call eg. memory that print all..
+			
+		}
+		else if (string =="exit")
+		{
+			run_prog = false;
+			
+		}
+		else
+		{
+			cout<<"Please enter a valid command"<<endl;
+		}
+	}
+	
 }
